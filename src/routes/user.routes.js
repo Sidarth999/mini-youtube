@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getCurrentUser, 
+import { changeCurrentPassword, getCurrentUser, 
     getUserChannelProfile, 
     getWatchHistory, 
     loginUser, 
