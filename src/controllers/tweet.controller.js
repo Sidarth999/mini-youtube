@@ -113,6 +113,10 @@ const getUserTweets = asyncHandler(async (req, res) => {
         }
     ])
 
+    if(!tweets){
+        throw new ApiError(500, "Failed to fetch tweets")
+    }
+
     return res
     .status(200)
     .json(
